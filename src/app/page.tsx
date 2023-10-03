@@ -1,10 +1,15 @@
+import { Logo } from '../components/atoms/Logo';
+import { Navigation } from '../components/atoms/Navigation';
+
 export default function Home() {
   return (
-    <main>
-      <div className="md:container md:mx-auto px-3.2 sm:text-base md:text-lg">
-        <p className="font-plateia">KRISTAL CLEAN</p>
-        <p>Kristal clean</p>
-      </div>
-    </main>
+    <div className="container mx-auto px-4 ">
+      <header className="">
+        <Logo />
+        <Navigation />
+      </header>
+      <main className=""></main>
+      <footer className=""></footer>
+    </div>
   );
 }

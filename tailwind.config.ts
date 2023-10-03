@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         plateia: ['Plateia Bold', 'sans-serif'],
       },
+      letterSpacing: {
+        special: '.5em',
+      },
     },
   },
   plugins: [],

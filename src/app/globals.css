@@ -31,7 +31,3 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
-html {
-  font-size: 10px;
-}
