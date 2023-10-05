@@ -12,7 +12,12 @@ const config: Config = {
         plateia: ['Plateia Bold', 'sans-serif'],
       },
       letterSpacing: {
+        specialSmall: '.2em',
         special: '.5em',
+      },
+      maxWidth: {
+        card: '220px',
+        cardNormal: '250px',
       },
     },
   },
