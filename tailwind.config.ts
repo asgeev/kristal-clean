@@ -18,6 +18,7 @@ const config: Config = {
       maxWidth: {
         card: '220px',
         cardNormal: '250px',
+        phoneSmall: '300px',
       },
     },
   },
