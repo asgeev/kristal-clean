@@ -1,8 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ArrowRight2 } from 'iconsax-react';
-import { Category } from 'iconsax-react';
+import { ArrowRight2, Category } from 'iconsax-react';
 
 export const Navigation = () => {
   const [isMenuOpen, seIsMenuOpen] = useState(false);
