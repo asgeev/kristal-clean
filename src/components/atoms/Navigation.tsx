@@ -1,18 +1,37 @@
+'use client';
+
+import { useState } from 'react';
 import { ArrowRight2 } from 'iconsax-react';
+import { Category } from 'iconsax-react';
+
 export const Navigation = () => {
+  const [isMenuOpen, seIsMenuOpen] = useState(false);
+
   return (
     <nav
-      className={`flex flex-col items-end gap-y-10 text-2xl tracking-widest	`}
+      className={`flex flex-col items-end gap-y-10 text-xl md:text-base tracking-widest`}
     >
-      <button>
-        <ArrowRight2 size="40px" />
+      <button
+        className="md:hidden text-decoration:none;"
+        onClick={() => seIsMenuOpen(true)}
+      >
+        <Category variant="Bold" size={35} />
       </button>
-      <a href="sevices" className="">
-        usługi
-      </a>
-      <a href="sevices">realizacje</a>
-      <a href="sevices">kontakt</a>
-      <a href="sevices">cennik</a>
+      <div
+        className={`${
+          isMenuOpen ? 'flex visible' : 'hidden invisible'
+        } fixed right-0	top-0 w-full h-full justify-end bg-black md:visible md:flex md:flex-row md:bg-transparent md:static`}
+      >
+        <div className="flex flex-col gap-8 p-8 items-end md:flex md:flex-row md:gap-6 md:p-0">
+          <button className="md:hidden" onClick={() => seIsMenuOpen(false)}>
+            <ArrowRight2 size="40px" />
+          </button>
+          <a href="uslugi">usługi</a>
+          <a href="realizacje">realizacje</a>
+          <a href="kontakt">kontakt</a>
+          <a href="cennik">cennik</a>
+        </div>
+      </div>
     </nav>
   );
 };

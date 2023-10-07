@@ -1,9 +1,9 @@
-import { Copyrights } from '../components/atoms/Copyrights';
+import { Header } from '../components/organisms/Header';
 
 export default function Home() {
   return (
     <div className="container mx-auto px-4 ">
-      <header className=""></header>
+      <Header />
       <main className=""></main>
       <footer className=""></footer>
     </div>
