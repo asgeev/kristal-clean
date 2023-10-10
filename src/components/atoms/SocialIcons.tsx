@@ -7,7 +7,7 @@ interface SocialLinks {
 
 export const SocialIcons = (props: SocialLinks) => {
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex flex-row gap-6">
       <a href={props.facebook}>
         <Facebook variant="Bold" size={58} />
       </a>
