@@ -36,9 +36,10 @@ const ServicesSection = () => {
         Usługi
       </h1>
       <div className="flex flex-row flex-wrap gap-10">
-        {services.map((service) => {
+        {services.map((service, index: number) => {
           return (
             <ServiceCard
+              key={index}
               header={service.header}
               description={service.description}
               iconSrc={service.iconSrc}
