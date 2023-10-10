@@ -16,7 +16,7 @@ const config: Config = {
         special: '.5em',
       },
       maxWidth: {
-        card: '220px',
+        card: '300px',
         cardNormal: '250px',
         phoneSmall: '300px',
       },
