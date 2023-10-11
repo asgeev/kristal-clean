@@ -10,10 +10,24 @@ export const DevIcons = (props: SocialLinks) => {
   return (
     <div className="flex flex-row gap-4">
       <Link href={props.github}>
-        <Image src="/assets/github.svg" alt="asfas" width={32} height={32} />
+        <div className="h-8 w-8 relative">
+          <Image
+            src="/assets/github.svg"
+            alt="asfas"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
       </Link>
       <Link href={props.linkedin}>
-        <Image src="/assets/linkedin.svg" alt="asfas" width={32} height={32} />
+        <div className="h-8 w-8 relative">
+          <Image
+            src="/assets/linkedin.svg"
+            alt="asfas"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
       </Link>
     </div>
   );

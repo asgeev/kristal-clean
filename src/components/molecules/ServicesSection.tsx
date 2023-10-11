@@ -31,10 +31,8 @@ const services: ServicesKeys[] = [
 
 const ServicesSection = () => {
   return (
-    <div className="flex flex-col gap-14 py-12">
-      <h1 id="uslugi" className="text-xl font-semibold tracking-wider">
-        Usługi
-      </h1>
+    <div id="uslugi" className="scroll-smooth	flex flex-col gap-14 py-12">
+      <h1 className="text-xl font-semibold tracking-wider">Usługi</h1>
       <div className="flex flex-row flex-wrap gap-10">
         {services.map((service, index: number) => {
           return (

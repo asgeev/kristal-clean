@@ -10,16 +10,16 @@ export const Footer = () => {
   return (
     <footer className="mt-24 mb-6">
       <Divider />
-      <div className="flex flex-row flex-wrap py-10 gap-16">
-        <div className="flex flex-col flex-wrap gap-10">
+      <div className="flex flex-col pt-8 md:mb-10 gap-16 md:gap-28 md:justify-between md:flex-row ">
+        <div className="flex flex-col flex-wrap gap-6">
           <Logo />
-          <Email />
           <div className="flex flex-col gap-3">
             <p>Sprawdź nas!</p>
-            <SocialIcons facebook="asfa" instagram="afssf" />
+            <SocialIcons small facebook="asfa" instagram="afssf" />
           </div>
+          <Email />
         </div>
-        <div className="flex flex-row gap-16 mb-28">
+        <div className="flex flex-row flex-wrap gap-12 mb-28">
           <FooterContainer title="Adres">
             <div className="flex flex-col gap-2">
               <p>Kristal Clean</p>
@@ -34,6 +34,9 @@ export const Footer = () => {
                 linkedin="https://linkedin.com"
               />
             </div>
+          </FooterContainer>
+          <FooterContainer title="O nas">
+            <p>Czym się zajmujemy?</p>
           </FooterContainer>
         </div>
       </div>

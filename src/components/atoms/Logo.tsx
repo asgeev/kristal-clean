@@ -6,13 +6,16 @@ export const Logo = () => {
       <p className="font-plateia text-xl tracking-special hidden lg:block">
         KRISTAL
       </p>
-      <Image
-        priority
-        src="/assets/logo.svg"
-        width="52"
-        height="52"
-        alt="Kristal Clean"
-      />
+      <div className="h-10 w-10 relative">
+        <Image
+          priority
+          src="/assets/logo.svg"
+          alt="Kristal Clean"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+
       <p className="font-plateia text-xl tracking-special hidden lg:block">
         CLEAN
       </p>
