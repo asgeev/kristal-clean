@@ -24,6 +24,7 @@
     "eslint-config-prettier": "^9.0.0",
     "postcss": "latest",
     "tailwindcss": "latest",
+    "tailwindcss-animated": "^1.0.1",
     "typescript": "latest"
   }
 }
