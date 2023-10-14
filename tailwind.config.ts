@@ -20,6 +20,12 @@ const config: Config = {
         cardNormal: '250px',
         phoneSmall: '300px',
       },
+      width: {
+        '100vw': '100vw',
+      },
+      height: {
+        '100vh': '100vh',
+      },
     },
   },
   plugins: [require('tailwindcss-animated')],
