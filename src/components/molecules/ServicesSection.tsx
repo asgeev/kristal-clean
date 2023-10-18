@@ -8,23 +8,26 @@ interface ServicesKeys {
 
 const services: ServicesKeys[] = [
   {
-    header: 'Odkurzanie',
-    description: 'Lorem ipsum, lorem ipsum, lorem ipsum',
+    header: 'Pranie',
+    description:
+      'Pranie krzeseł, foteli, kanap. Pranie tapicerki samochodowej oraz impregnacja.',
     iconSrc: '/assets/vacuum.svg',
   },
+  // {
+  //   header: 'Zamiatanie',
+  //   description: 'Lorem ipsum, lorem ipsum, lorem ipsum',
+  //   iconSrc: '/assets/broom.svg',
+  // },
   {
-    header: 'Zamiatanie',
-    description: 'Lorem ipsum, lorem ipsum, lorem ipsum',
-    iconSrc: '/assets/broom.svg',
-  },
-  {
-    header: 'Polerowanie',
-    description: 'Lorem ipsum, lorem ipsum, lorem ipsum',
+    header: 'Impregnacja',
+    description:
+      'Zabezpieczenie okien powłoką odpychającą brud. Impregnacja tapicerki materiałowej również samochodowej.',
     iconSrc: '/assets/rag.svg',
   },
   {
     header: 'Mycie',
-    description: 'Lorem ipsum, lorem ipsum, lorem ipsum',
+    description:
+      'Mycie okien, usuwanie osadów, żywicy, grzybów, farby. Mycie parapetów i ram okiennych.',
     iconSrc: '/assets/detergent.svg',
   },
 ];

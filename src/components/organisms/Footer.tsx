@@ -15,7 +15,11 @@ export const Footer = () => {
           <Logo />
           <div className="flex flex-col gap-3">
             <p>Sprawdź nas!</p>
-            <SocialIcons small facebook="asfa" instagram="afssf" />
+            <SocialIcons
+              small
+              facebook="https://www.facebook.com/profile.php?id=100095595249458&locale=pl_PL"
+              instagram="https://www.instagram.com/kristalclean.pl"
+            />
           </div>
           <Email />
         </div>
@@ -30,8 +34,8 @@ export const Footer = () => {
             <div className="flex flex-col gap-2">
               <p>Adam Szymański</p>
               <DevIcons
-                github="https://github.com"
-                linkedin="https://linkedin.com"
+                github="https://github.com/polishghost27"
+                linkedin="https://www.linkedin.com/in/szymanski-adam/"
               />
             </div>
           </FooterContainer>

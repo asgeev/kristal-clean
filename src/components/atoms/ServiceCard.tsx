@@ -9,7 +9,7 @@ interface Props {
 
 export const ServiceCard = (props: Props) => {
   return (
-    <div className="max-w-card">
+    <div className="w-full sm:w-4/5 md:max-w-card">
       <div className="flex flex-col gap-5">
         <Image
           priority
@@ -27,7 +27,7 @@ export const ServiceCard = (props: Props) => {
           <p className="text-lg md:text-xl font-semibold tracking-widest">
             {props.header}
           </p>
-          <p className=" text-sm md:text:basic font-light tracking-wider">
+          <p className=" text-sm md:text:basic font-light tracking-widest">
             {props.description}
           </p>
         </div>

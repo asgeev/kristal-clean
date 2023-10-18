@@ -10,8 +10,8 @@ export const ContactSection = () => {
         </p>
         <PhoneNumber invert number="733 726 236" />
         <SocialIcons
-          facebook="https://www.facebook.com"
-          instagram="https://www.instagram.com"
+          facebook="https://www.facebook.com/profile.php?id=100095595249458&locale=pl_PL"
+          instagram="https://www.instagram.com/kristalclean.pl"
         />
       </div>
     </div>

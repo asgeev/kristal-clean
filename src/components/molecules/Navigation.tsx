@@ -68,7 +68,7 @@ export const Navigation = () => {
             animationDelay={600}
             onClick={closeMenu}
           />
-          <NavLink
+          {/* <NavLink
             href="#cennik"
             name="cennik"
             animationDelay={800}
@@ -79,7 +79,7 @@ export const Navigation = () => {
             name="realizacje"
             animationDelay={1000}
             onClick={closeMenu}
-          />
+          /> */}
         </div>
       </div>
     </nav>
