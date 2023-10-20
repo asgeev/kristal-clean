@@ -39,9 +39,9 @@ export const Footer = () => {
               />
             </div>
           </FooterContainer>
-          <FooterContainer title="O nas">
+          {/* <FooterContainer title="O nas">
             <p>Czym się zajmujemy?</p>
-          </FooterContainer>
+          </FooterContainer> */}
         </div>
       </div>
 
