@@ -1,5 +1,3 @@
-'use client';
-
 import { useState, useLayoutEffect } from 'react';
 import { ArrowRight2, Category } from 'iconsax-react';
 import { NavLink } from '../atoms/NavLink';
@@ -33,15 +31,15 @@ export const Navigation = () => {
         <Category variant="Bold" size={35} />
       </button>
       <div
-        data-isMenuOpen={`${isMenuOpen}`}
+        data-ismenuopen={`${isMenuOpen}`}
         className={`
         fixed
         top-0
         right-0
-        max-md:data-[isMenuOpen=false]:hidden
-        max-md:data-[isMenuOpen=true]:bg-black
-        max-md:data-[isMenuOpen=true]:h-100vh 
-        max-md:data-[isMenuOpen=true]:w-100vw
+        max-md:data-[ismenuopen=false]:hidden
+        max-md:data-[ismenuopen=true]:bg-black
+        max-md:data-[ismenuopen=true]:h-100vh 
+        max-md:data-[ismenuopen=true]:w-100vw
         p-2
         z-50 
         justify-en
