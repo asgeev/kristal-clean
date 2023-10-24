@@ -5,12 +5,15 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: docker-next
+    container_name: kristal-clean
     deploy:
       labels:
-        com.example.description: 'This label will appear on the web service'
+        - traefik.http.routers.my-container.rule=Host(`kristalclean.pl`)
+        # switch on TLS
+        - traefik.http.routers.blog.tls=true
+        # tell Traefik to serve it from port 443
+        - traefik.http.routers.blog.entrypoints=websecure
+        # Traefik shall get a certificate using the letsEncryptResolver
+        - traefik.http.routers.blog.tls.certresolver=letsEncryptResolver
     ports:
       - '8081:3000'
-    volumes:
-      - .:/app
-      - /app/node_modules
