@@ -6,14 +6,13 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: kristal-clean
-    deploy:
-      labels:
-        - traefik.http.routers.kristal-clean.rule=Host(`kristalclean.pl`)
-        # switch on TLS
-        - traefik.http.routers.kristal-clean.tls=true
-        # tell Traefik to serve it from port 443
-        - traefik.http.routers.kristal-clean.entrypoints=websecure
-        # Traefik shall get a certificate using the letsEncryptResolver
-        - traefik.http.routers.kristal-clean.tls.certresolver=letsEncryptResolver
+    labels:
+      - traefik.http.routers.kristal-clean.rule=Host(`kristalclean.pl`)
+      # switch on TLS
+      - traefik.http.routers.kristal-clean.tls=true
+      # tell Traefik to serve it from port 443
+      - traefik.http.routers.kristal-clean.entrypoints=websecure
+      # Traefik shall get a certificate using the letsEncryptResolver
+      - traefik.http.routers.kristal-clean.tls.certresolver=letsEncryptResolver
     ports:
       - '8081:3000'
