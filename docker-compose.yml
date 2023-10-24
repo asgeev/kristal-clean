@@ -8,12 +8,12 @@ services:
     container_name: kristal-clean
     deploy:
       labels:
-        - traefik.http.routers.my-container.rule=Host(`kristalclean.pl`)
+        - traefik.http.routers.kristal-clean.rule=Host(`kristalclean.pl`)
         # switch on TLS
-        - traefik.http.routers.blog.tls=true
+        - traefik.http.routers.kristal-clean.tls=true
         # tell Traefik to serve it from port 443
-        - traefik.http.routers.blog.entrypoints=websecure
+        - traefik.http.routers.kristal-clean.entrypoints=websecure
         # Traefik shall get a certificate using the letsEncryptResolver
-        - traefik.http.routers.blog.tls.certresolver=letsEncryptResolver
+        - traefik.http.routers.kristal-clean.tls.certresolver=letsEncryptResolver
     ports:
       - '8081:3000'
