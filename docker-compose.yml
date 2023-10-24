@@ -8,6 +8,7 @@ services:
     container_name: kristal-clean
     labels:
       - traefik.http.routers.app.rule=Host(`kristalclean.pl`)
+      - traefik.http.services.app.loadbalancer.server.port=8081
       # switch on TLS
       - traefik.http.routers.app.tls=true
       # tell Traefik to serve it from port 443
