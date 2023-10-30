@@ -27,6 +27,7 @@ export const Footer = () => {
           <FooterContainer title="Adres">
             <div className="flex flex-col gap-2">
               <p>Kristal Clean</p>
+              <p>ul. gen. L. Okulickiego 35</p>
               <p>21-040 Świdnik</p>
             </div>
           </FooterContainer>
@@ -34,7 +35,7 @@ export const Footer = () => {
             <div className="flex flex-col gap-2">
               <p>Adam Szymański</p>
               <DevIcons
-                github="https://github.com/polishghost27"
+                github="https://github.com/asgeev"
                 linkedin="https://www.linkedin.com/in/szymanski-adam/"
               />
             </div>
