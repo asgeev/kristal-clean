@@ -46,7 +46,9 @@ export const Navigation = () => {
         md:block 
         md:static  
         md:flex-row 
-        max-md:animate-fade-left animate-duration-[400ms] animate-ease-in
+        max-md:animate-fade-left 
+        max-md:animate-duration-[300ms]
+        max-md:animate-ease-in
         overflow-hidden
         `}
       >
@@ -54,28 +56,18 @@ export const Navigation = () => {
           <button className="md:hidden" onClick={closeMenu}>
             <ArrowRight2 size="40px" />
           </button>
-          <NavLink
-            href="#kontakt"
-            name="kontakt"
-            animationDelay={400}
-            onClick={closeMenu}
-          />
-          <NavLink
-            href="#uslugi"
-            name="usługi"
-            animationDelay={600}
-            onClick={closeMenu}
-          />
+          <NavLink href="#kontakt" name="kontakt" onClick={closeMenu} />
+          <NavLink href="#uslugi" name="usługi" onClick={closeMenu} />
           {/* <NavLink
             href="#cennik"
             name="cennik"
-            animationDelay={800}
+            animationDelay={350}
             onClick={closeMenu}
-          />
-          <NavLink
+          /> */}
+          {/* <NavLink
             href="#realizacje"
             name="realizacje"
-            animationDelay={1000}
+            animationDelay={500}
             onClick={closeMenu}
           /> */}
         </div>

@@ -1,35 +1,20 @@
 version: '3.9'
 
 networks:
-  traefik:
+  traefik_web:
+    name: traefik_web
+    external: true
 
 services:
-  app:
+  frontend:
     build:
       context: .
       dockerfile: Dockerfile
       labels:
         - traefik.enabled=true
-        - traefik.http.routers.app.rule=Host(`kristalclean.pl`)
-        - traefik.http.services.app.loadbalancer.server.port=8081
+        - traefik.docker.network=traefik_web
     container_name: kristal-clean
     networks:
-      - traefik
+      - traefik_web
     ports:
       - '8081:3000'
-  traefik:
-    # The official v3 Traefik Docker image
-    image: traefik:v3.0
-    # Enables the web UI and tells Traefik to listen to Docker
-    restart: always
-    networks:
-      - traefik
-    ports:
-      - '80:80'
-      - '443:443'
-    command:
-      - --api.insecure=false
-      - --providers.docker
-    volumes:
-      # So that Traefik can listen to the Docker events
-      - /var/run/docker.sock:/var/run/docker.sock
