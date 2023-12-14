@@ -1,4 +1,4 @@
-version: '3.9'
+version: '3'
 
 networks:
   traefik_web:
@@ -6,15 +6,12 @@ networks:
     external: true
 
 services:
-  frontend:
+  kristalclean:
     build:
       context: .
       dockerfile: Dockerfile
-      labels:
-        - traefik.enabled=true
-        - traefik.docker.network=traefik_web
-    container_name: kristal-clean
     networks:
       - traefik_web
-    ports:
-      - '8081:3000'
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.kristalclean.rule=Host(`kristalclean.pl`)'
