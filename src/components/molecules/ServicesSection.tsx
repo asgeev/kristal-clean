@@ -1,5 +1,6 @@
 import { ServiceCard } from '../atoms/ServiceCard';
-
+import { SectionHeader } from '../atoms/SectionHeader';
+import { Section } from '../atoms/Section';
 interface ServicesKeys {
   header: string;
   description: string;
@@ -32,10 +33,10 @@ const services: ServicesKeys[] = [
   },
 ];
 
-const ServicesSection = () => {
+export const ServicesSection = () => {
   return (
-    <div id="uslugi" className="scroll-smooth	flex flex-col gap-14 py-12">
-      <h1 className="text-xl font-semibold tracking-wider">Usługi</h1>
+    <Section id="usługi">
+      <SectionHeader title="Usługi" />
       <div className="flex flex-row flex-wrap gap-10">
         {services.map((service, index: number) => {
           return (
@@ -48,8 +49,6 @@ const ServicesSection = () => {
           );
         })}
       </div>
-    </div>
+    </Section>
   );
 };
-
-export default ServicesSection;
