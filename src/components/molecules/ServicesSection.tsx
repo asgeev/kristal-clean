@@ -35,7 +35,7 @@ const services: ServicesKeys[] = [
 
 export const ServicesSection = () => {
   return (
-    <Section id="usługi">
+    <Section id="uslugi">
       <SectionHeader title="Usługi" />
       <div className="flex flex-row flex-wrap gap-10">
         {services.map((service, index: number) => {

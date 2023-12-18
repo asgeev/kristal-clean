@@ -56,14 +56,9 @@ export const Navigation = () => {
           <button className="md:hidden" onClick={closeMenu}>
             <ArrowRight2 size="40px" />
           </button>
-          <NavLink
-            href="#cennik"
-            name="cennik"
-            animationDelay={350}
-            onClick={closeMenu}
-          />
-          <NavLink href="#uslugi" name="usługi" onClick={closeMenu} />
           <NavLink href="#kontakt" name="kontakt" onClick={closeMenu} />
+          <NavLink href="#uslugi" name="usługi" onClick={closeMenu} />
+          <NavLink href="#cennik" name="cennik" onClick={closeMenu} />
 
           {/* <NavLink
             href="#realizacje"
