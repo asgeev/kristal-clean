@@ -8,7 +8,7 @@ export const ContactSection = () => {
         <p className="tracking-widest	text-lg md:text-2xl">
           Zadzwoń już teraz!!!
         </p>
-        <PhoneNumber invert number="733 726 236" />
+        <PhoneNumber number="733 726 236" />
         <SocialIcons
           facebook="https://www.facebook.com/profile.php?id=100095595249458&locale=pl_PL"
           instagram="https://www.instagram.com/kristalclean.pl"

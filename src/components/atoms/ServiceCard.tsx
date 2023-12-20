@@ -17,11 +17,7 @@ export const ServiceCard = (props: Props) => {
           width="40"
           height="40"
           alt="vacuum"
-          color="white"
           quality={100}
-          style={{
-            filter: 'invert(1)',
-          }}
         />
         <div className="flex flex-col gap-4">
           <p className="text-lg md:text-xl font-semibold tracking-widest">

@@ -19,9 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pl">
+    <html lang="pl" className="black">
       <head>
         <link rel="icon" href="/favicon.svg" />
+        <meta name="color-scheme" content="only dark" />
       </head>
       <body className={poppins.className}>{children}</body>
     </html>
