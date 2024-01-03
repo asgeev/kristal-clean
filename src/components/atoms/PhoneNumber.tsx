@@ -1,10 +1,15 @@
-import { Image } from 'iconsax-react';
+'use client';
+
 import { Call, Copy } from 'iconsax-react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import toast, { Toaster } from 'react-hot-toast';
 
 interface Props {
   number: string;
 }
 export const PhoneNumber = (props: Props) => {
+  const notify = () => toast('Skopiowano!');
+
   return (
     <div
       className={
@@ -21,9 +26,16 @@ export const PhoneNumber = (props: Props) => {
           >
             {props.number}
           </p>
-          <button>
-            <Copy size={28} color="black" variant="Outline" />
-          </button>
+          <CopyToClipboard text={props.number} onCopy={notify}>
+            <button>
+              <Copy size={28} color="black" variant="Outline" />
+            </button>
+          </CopyToClipboard>
+          <Toaster
+            toastOptions={{
+              className: 'font-medium text-sm',
+            }}
+          />
         </div>
       </div>
     </div>
