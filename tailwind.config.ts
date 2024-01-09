@@ -25,9 +25,13 @@ module.exports = {
       },
       width: {
         '100vw': '100vw',
+        watermarkWidth: '500px',
+        watermarkWidthLg: '800px',
       },
       height: {
         '100vh': '100vh',
+        watermarkHeight: '500px',
+        watermarkHeightLg: '800px',
       },
     },
   },
